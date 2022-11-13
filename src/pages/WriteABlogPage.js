@@ -30,7 +30,7 @@ const WriteABlogPage = ({ placeholder }) => {
                     <input type="file" id='uploadimage' className='hidden' />
                     <span className='h-full text-slate-500 font-bold'>|</span>
 
-                    <input type="text" placeholder='Add a title' className='placeholder:text-slate-500 placeholder:italic placeholder: px-2 outline-none text-xl md:text-2xl bg-inherit' />
+                    <input type="text" placeholder='Add a title' className='placeholder:text-slate-400 placeholder:italic placeholder: px-2 outline-none text-xl md:text-2xl bg-inherit border-b-2' />
                 </div>
 
                 <div className='my-4'>
