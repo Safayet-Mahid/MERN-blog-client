@@ -1,6 +1,7 @@
 import './App.css';
 import AuthorPage from './pages/AuthorPage';
 import HomePage from './pages/HomePage';
+import LoginPage from './pages/LoginPage';
 import SingleBlogPage from './pages/SingleBlogPage';
 import TopicWiseBlogPage from './pages/TopicWiseBlogPage';
 import UserHomePage from './pages/UserHomePage';
@@ -14,8 +15,8 @@ function App() {
       {/* <TopicWiseBlogPage /> */}
       {/* <SingleBlogPage /> */}
       {/* <WriteABlog /> */}
-      <UserHomePage />
-
+      {/* <UserHomePage /> */}
+      <LoginPage/>
 
     </div>
   );
