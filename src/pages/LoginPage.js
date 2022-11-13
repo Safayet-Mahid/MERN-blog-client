@@ -28,7 +28,7 @@ const LoginPage = () => {
                     {/* center right  */}
                     <div className='flex-1 bg-gradient-to-br from-cyan-300 to-yellow-400 shadow-md shadow-purple-200 px-1 md:px-4 py-12 flex flex-col  gap-y-2  items-center rounded-2xl border-2 w-4/5 mx-auto'>
                         <p className='text-slate-700 text-2xl font-extrabold'>Login</p>
-                        <span className='text-slate-700 text-sm'>Sign in to your account</span>
+                        <span className='text-slate-700 text-sm mb-2'>Sign in to your account</span>
                         <div className='flex items-center gap-x-1 rounded-full bg-gray-100  py-2 px-6 my-1 justify-between w-4/5'>
                             <input type="text" placeholder='Username / Email' className='bg-inherit' />
                             <AiOutlineUser />
@@ -39,7 +39,7 @@ const LoginPage = () => {
                         </div>
                         <div className='flex justify-between items-center w-4/5'>
                             <div className='flex items-center gap-x-1'>
-                                <input type="checkbox" name="" id="" className='bg-red-500 border-2 border-black' />
+                                <input type="checkbox" name="" id="" />
                                 <p className='text-slate-700 text-sm'>Remember me</p>
                             </div>
 
