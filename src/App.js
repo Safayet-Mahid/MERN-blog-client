@@ -1,3 +1,4 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import AuthorPage from './pages/AuthorPage';
 import HomePage from './pages/HomePage';
@@ -11,14 +12,24 @@ import WriteABlog from './pages/WriteABlogPage';
 function App() {
   return (
     <div>
-      {/* <HomePage /> */}
-      {/* <AuthorPage /> */}
-      {/* <TopicWiseBlogPage /> */}
-      {/* <SingleBlogPage /> */}
-      {/* <WriteABlog /> */}
-      {/* <UserHomePage /> */}
-      {/* <LoginPage/> */}
-      <RegistrationPage />
+
+      <BrowserRouter>
+        <Routes>
+
+          <Route path='/' element={<HomePage />} />
+          <Route path='/author/:authorName' element={<AuthorPage />} />
+          <Route path='/:topic' element={<TopicWiseBlogPage />} />
+          <Route path='/:topic/:blogTitle' element={<SingleBlogPage />} />
+          <Route path='/write' element={<WriteABlog />} />
+          <Route path='/dashboard/:userName' element={<UserHomePage />} />
+          <Route path='/login' element={<LoginPage />} />
+          <Route path='/register' element={<RegistrationPage />} />
+        </Routes>
+
+      </BrowserRouter>
+
+
+
     </div>
   );
 }
