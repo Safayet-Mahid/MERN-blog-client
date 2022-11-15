@@ -4,6 +4,7 @@ import { FaSearch } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { CiDark } from "react-icons/ci";
+import { Link } from 'react-router-dom';
 
 
 const NavBar = () => {
@@ -19,10 +20,10 @@ const NavBar = () => {
      <div className=' w-100 md:w-11/12 lg:w-3/5 mx-auto'>
         <div className='flex justify-between  items-center'>
             {/* logo */}
-            <div className='flex justify-between gap-x-1 items-center'>
+            <Link to="/" className='flex justify-between gap-x-1 items-center '>
                <BlogIcon/>
                 <p className='font-semibold text-slate-600 text-2xl'>MyBlog</p>
-            </div>
+            </Link>
 
             {/* search */}
             <div className=' flex items-center gap-x-2 p-2 bg-slate-100 rounded-md md:w-60  lg:w-80'>
@@ -31,11 +32,14 @@ const NavBar = () => {
             </div>
 
             {/* others */}
-              <div className= {`hidden md:flex items-center gap-x-2 text-xs text-slate-600 font-semibold`}>
-                <div>Home</div>
-                <div>More</div>
-                <div>Contact</div>
+              <div className= {`hidden md:flex items-center gap-x-2 text-sm text-slate-600 font-semibold`}>
+                <Link to='/'>Home</Link>
+                <Link>More</Link>
+                <Link>Contact</Link>
                 <CiDark color='black' size="1rem"/>
+                <Link to="/dashboard/safayetMahid">
+                  <img src="https://m.media-amazon.com/images/S/amzn-author-media-prod/cpe1f18d60krjvp4sa76ktljpn._SY600_.jpg" className='w-10 h-10 rounded-full' alt="" />
+                </Link>
             </div>
             {/* responsive mobile view */}
           <div className='md:hidden flex flex-col items-end gap-y-1 '>

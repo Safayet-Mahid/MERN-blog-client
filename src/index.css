@@ -668,6 +668,9 @@ video {
 .h-\[30vh\] {
   height: 30vh;
 }
+.min-h-screen {
+  min-height: 100vh;
+}
 .w-32 {
   width: 8rem;
 }
@@ -984,6 +987,10 @@ video {
 .bg-gray-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+.bg-red-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
 }
 .bg-opacity-30 {
   --tw-bg-opacity: 0.3;
