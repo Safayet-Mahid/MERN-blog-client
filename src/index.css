@@ -509,6 +509,9 @@ video {
 .m-4 {
   margin: 1rem;
 }
+.m-auto {
+  margin: auto;
+}
 .my-12 {
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -938,6 +941,10 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(51 65 85 / var(--tw-border-opacity));
 }
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+}
 .bg-blue-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(191 219 254 / var(--tw-bg-opacity));
@@ -984,13 +991,13 @@ video {
 .bg-transparent {
   background-color: transparent;
 }
-.bg-gray-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
-}
 .bg-red-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 202 202 / var(--tw-bg-opacity));
+}
+.bg-gray-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 .bg-opacity-30 {
   --tw-bg-opacity: 0.3;
@@ -1110,6 +1117,12 @@ video {
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
+}
+.pr-1 {
+  padding-right: 0.25rem;
+}
+.pr-2 {
+  padding-right: 0.5rem;
 }
 .text-left {
   text-align: left;
@@ -1498,6 +1511,10 @@ video {
 
   .md\:gap-y-0 {
     row-gap: 0px;
+  }
+
+  .md\:gap-x-2 {
+    column-gap: 0.5rem;
   }
 
   .md\:space-y-6 > :not([hidden]) ~ :not([hidden]) {

@@ -3,7 +3,7 @@ import TypeBSingleBlog from './TypeBSingleBlog'
 
 const FeedTypeB = () => {
   return (
-    <div className='border-2 py-12  px-4'>
+    <div className=' py-12  px-4'>
     <div className='md:w-11/12 lg:w-3/5 mx-auto'>
         {/* top */}
         <div className='flex justify-between items-center mt-4 mb-8'>
