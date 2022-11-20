@@ -7,7 +7,7 @@ const TypeASIngleBlog = () => {
    
   return (
       <Link to="/">
-        <div className='flex shadow-sm ' >
+        <div className='flex shadow-sm my-2' >
                       {/* left img  */}
           <div className=' md:flex-1 lg:flex-[.75] '>
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJWxNNQgGc_gbTO1mfEFSH5Moe5LRgSsIBIVEqtfnKCI4RUMiGweQmUrd5Lk2lLZFVKT8&usqp=CAU" alt="" className='w-full h-full object-cover rounded-l-lg' />
