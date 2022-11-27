@@ -1,14 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import { FiHeart } from "react-icons/fi"
 import { SiTheconversation } from "react-icons/si"
+import CommentInput from './CommentInput'
 import Comments from './Comments'
 
 const Comment = ({parent}) => {
+
+    const [isReplying, setIsReplying] = useState(false)
   return (
     <div className=' ml-8 mt-6 border-l-2 border-gray-100 pl-2 py-2'>
 
-        <div className=''>
+        <div className='space-y-2'>
             <div className='flex gap-x-2 '>
                 <div className='w-10 h-10 rounded-full'>
                     <img src="https://interstrates.files.wordpress.com/2016/08/boy-cool-guy-handsome-favim-com-3507239.jpg" alt="" className='w-full h-full rounded-full object-cover' />
@@ -23,19 +26,20 @@ const Comment = ({parent}) => {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam neque dolorum molestias laboriosam blanditiis eveniet ratione perferendis explicabo ducimus! Impedit iste vitae molestiae minus dolores?</p>
                     {/* reactions and reply  */}
                     <div className='flex gap-x-6 items-center mt-5'>
-                        <div className='flex gap-x-1 items-center'>
+                        <div className='flex gap-x-1 items-center cursor-pointer hover:bg-gray-100 p-1'>
                             <FiHeart color='gray' />
                             <span className='text-sm text-slate-400'>3 likes</span>
                         </div>
-                        <div className='flex gap-x-1 items-center'>
+                        <button className='flex gap-x-1 items-center cursor-pointer  hover:bg-gray-100 p-1' onClick={()=>setIsReplying(!isReplying)}>
                             <SiTheconversation color='gray' />
-                            <span className='text-sm text-slate-400'>Reply</span>
-                        </div>
+                            <span className='text-sm text-slate-400' >Reply</span>
+                        </button>
 
                     </div>
                 </div>
 
             </div>
+            {isReplying && <CommentInput/>}
         </div>
     <Comments comments={parent.children}/>
         

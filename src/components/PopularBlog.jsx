@@ -25,7 +25,7 @@ const PopularBlog = () => {
               <p className='text-xs text-gray-500'>july 15,2022</p>
               <div className='flex items-center text-xs'>
                 <BiTimeFive/>
-                <span cls>1min</span>
+                <span >1min</span>
               </div>
             </div>
           </div>

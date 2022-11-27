@@ -19,7 +19,7 @@ function App() {
           <Route path='/' element={<HomePage />} />
           <Route path='/author/:authorName' element={<AuthorPage />} />
           <Route path='/:topic' element={<TopicWiseBlogPage />} />
-          <Route path='/:topic/:blogTitle' element={<SingleBlogPage />} />
+          <Route path='/:author/:blogTitle' element={<SingleBlogPage />} />
           <Route path='/write' element={<WriteABlog />} />
           <Route path='/dashboard/:userName' element={<UserHomePage />} />
           <Route path='/login' element={<LoginPage />} />
